@@ -81,6 +81,30 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.0.5</version>
         </dependency>
+        <!-- EHCache Core APIs -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>2.6.11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sf.ehcache/ehcache -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <!-- Hibernate EHCache API -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>4.3.5.Final</version>
+        </dependency>
+        <!-- EHCache uses slf4j for logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.5</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>JSP_JSTL_Sapmle-01</finalName>
@@ -90,6 +114,10 @@
                 <filtering>true</filtering>
                 <directory>src/META-INF</directory>
                 <targetPath>META-INF</targetPath>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>src/main/java/ir/hri/resource</directory>
             </resource>
         </resources>
 

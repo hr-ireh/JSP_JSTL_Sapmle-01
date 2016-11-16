@@ -13,7 +13,6 @@ import java.util.List;
 public class StateTag extends SimpleTagSupport {
 
     public void doTag() throws JspException, IOException {
-
         JspWriter out = getJspContext().getOut();
         State state = new State();
         List<StateEntity> stateEntities = state.getStates();

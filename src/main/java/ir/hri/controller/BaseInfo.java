@@ -1,5 +1,6 @@
 package ir.hri.controller;
 
+import ir.hri.business.City;
 import ir.hri.business.State;
 import ir.hri.entity.CityEntity;
 import ir.hri.entity.StateEntity;
@@ -13,8 +14,8 @@ public class BaseInfo {
         return state.getStates();
     }
 
-    public ArrayList<CityEntity> getCity(int i) {
-
-        return new ArrayList<CityEntity>();
+    public List<CityEntity> getCity(int i) {
+        City city = new City();
+        return city.getCityByStateId(i);
     }
 }

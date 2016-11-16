@@ -1,11 +1,25 @@
 <taglib>
-    <tlib-version>1.0</tlib-version>
+    <tlib-version>2.0</tlib-version>
     <jsp-version>2.0</jsp-version>
     <short-name>Example TLD</short-name>
     <uri>http://myhost.com/tld</uri>
+
     <tag>
         <name>State</name>
         <tag-class>ir.hri.taglib.StateTag</tag-class>
         <body-content>scriptless</body-content>
+    </tag>
+    <tag>
+        <name>City</name>
+        <tag-class>ir.hri.taglib.CityTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>stateId</name>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <name>onchangeMethod</name>
+            <required>false</required>
+        </attribute>
     </tag>
 </taglib>

@@ -1,11 +1,18 @@
 package ir.hri.entity;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
+
 import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "STATE")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE ,region = "cache1")
 public class StateEntity {
     @Id
     @Column(name = "ID")
@@ -14,7 +21,7 @@ public class StateEntity {
     @Column(name = "NAME", length = 50, nullable = false)
     String name;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "STATE_ID")
     List<CityEntity> cities = new ArrayList<CityEntity>();
 

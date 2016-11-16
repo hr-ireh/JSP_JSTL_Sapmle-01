@@ -1,9 +1,15 @@
 package ir.hri.entity;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "CITY")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE ,region = "cache1")
 public class CityEntity {
     @Id
     @Column(name = "ID")

@@ -8,6 +8,10 @@
 <script type="text/javascript" src='/dwr/util.js'></script>
 <script type="text/javascript" src='/dwr/interface/baseInfo.js'></script>
 <script>
+    window.onload = function () {
+        loadState();
+    }
+
     function loadState() {
         baseInfo.getState(callBackFunctionForState);
     }
@@ -16,31 +20,33 @@
     }
 
     var callBackFunctionForState = function (methodReturn) {
-        var select = document.createElement("select");
-        select.id = "se1";
+        var select = document.getElementById("selState");
+        select.innerHTML = "";
         for (i = 0; i < methodReturn.length; i++) {
             var option = document.createElement("option");
-            option.value = methodReturn[i].name;
+            option.value = methodReturn[i].id;
             option.selected = "";
             option.innerHTML = methodReturn[i].name;
             select.appendChild(option);
         }
-        document.getElementById("out1").appendChild(select);
     }
 
     var callBackFunctionForCity = function (methodReturn) {
-        var select = document.createElement("select");
-        select.id = "se1";
+        var select = document.getElementById("selCity");
+        select.innerHTML = "";
         for (i = 0; i < methodReturn.length; i++) {
             var option = document.createElement("option");
-            option.value = methodReturn[i].name;
+            option.value = methodReturn[i].id;
             option.selected = "";
             option.innerHTML = methodReturn[i].name;
             select.appendChild(option);
         }
-        document.getElementById("out1").appendChild(select);
     }
-
+    function changeState() {
+        var select = document.getElementById("selState");
+        var i = select.options[select.selectedIndex].value;
+        loadCity(i);
+    }
 </script>
 
 <c:set var="x" value="${1+3}"/>
@@ -54,6 +60,7 @@
 <ex:State>
     State
 </ex:State>
+<ex:City stateId="2" onchangeMethod="loadState()"/>
 
 <P>JSTL,forEach:</P>
 <c:forEach begin="1" end="3" var="i">
@@ -61,6 +68,11 @@
 </c:forEach>
 
 <button onclick="loadState()">getCountry</button>
+
+<select id="selState" onchange="changeState()">
+</select>
+<select id="selCity">
+</select>
 
 <div id="out1"></div>
 <br>

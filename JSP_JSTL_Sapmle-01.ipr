@@ -44,9 +44,14 @@
             <element id="library" level="project" name="Maven: org.javassist:javassist:3.18.1-GA" />
             <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
             <element id="library" level="project" name="Maven: org.jboss:jandex:1.1.0.Final" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
             <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
             <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:4.3.5.Final" />
             <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.0.5" />
+            <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" />
+            <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.1" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-ehcache:4.3.5.Final" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.5" />
           </element>
         </element>
         <element id="directory" name="META-INF">
@@ -382,6 +387,28 @@
         <root url="jar://$USER_HOME$/.m2/repository/mysql/mysql-connector-java/5.0.5/mysql-connector-java-5.0.5-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: net.sf.ehcache:ehcache-core:2.6.11">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.m2/repository/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/.m2/repository/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.m2/repository/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.ehcache:ehcache:2.10.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.m2/repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/.m2/repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.m2/repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.directwebremoting:dwr:3.0.M1">
       <CLASSES>
         <root url="jar://$USER_HOME$/.m2/repository/org/directwebremoting/dwr/3.0.M1/dwr-3.0.M1.jar!/" />
@@ -446,6 +473,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-ehcache:4.3.5.Final">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-ehcache/4.3.5.Final/hibernate-ehcache-4.3.5.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-ehcache/4.3.5.Final/hibernate-ehcache-4.3.5.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-ehcache/4.3.5.Final/hibernate-ehcache-4.3.5.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hibernate:hibernate-entitymanager:4.3.5.Final">
@@ -556,6 +594,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-simple:1.7.5">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: xml-apis:xml-apis:1.0.b2">
